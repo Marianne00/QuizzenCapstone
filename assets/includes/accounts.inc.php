@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     class Accounts {
         private $fname = "";
         private $mname = "";
@@ -10,7 +10,6 @@
 
         public function connectQuizzen($con) {
             $con = mysqli_connect("localhost","root","","quizzendb");
-            // Check connection
             if (mysqli_connect_errno())
             {
               echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -65,12 +64,13 @@
                 echo 'Please fill up all the fields';
             }
         }
-    }
+    
 
-    public function testLogIn($logResult,$username,$location){
-        if($logResult){
-            $_SESSION['hostname'] = $username;
-            header('location:'.$location);
+        public function getUsername($logResult,$username,$location){
+            if($logResult){
+                $_SESSION['hostname'] = $username;
+                header('location:'.$location);
+            }
         }
     }
 ?>
