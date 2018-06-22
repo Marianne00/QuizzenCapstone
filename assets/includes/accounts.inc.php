@@ -51,7 +51,7 @@
                     if (mysqli_num_rows($result) == 1) {
                         $user = mysqli_fetch_assoc($result);
                         if ($user['password'] == $password) {
-                            echo 'Password match';
+                            return true;
                         } else {
                             echo 'Wrong Password';
                         }
@@ -67,5 +67,10 @@
         }
     }
 
-
+    public function testLogIn($logResult,$username,$location){
+        if($logResult){
+            $_SESSION['hostname'] = $username;
+            header('location:'.$location);
+        }
+    }
 ?>

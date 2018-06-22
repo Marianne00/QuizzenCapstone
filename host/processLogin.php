@@ -5,5 +5,6 @@
   $con = "";
 
   $accounts = new Accounts();
-  $accounts->loginAccount($username, $password, $con);
+  $logResult = $accounts->loginAccount($username, $password, $con);
+  $accounts->$accounts->testLogIn($logResult,$username,'location');
 ?>
