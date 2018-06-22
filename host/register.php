@@ -12,5 +12,6 @@
         <input type="password" name="confirm" placeholder="Confirm" /><br>
         <input type="submit" />
     </form>
+    <a href="login.php"></a>
   </body>
 </html>

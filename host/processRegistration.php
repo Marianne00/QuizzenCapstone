@@ -1,5 +1,5 @@
 <?php
-    require 'includes/accounts.inc.php';
+    require '../assets/includes/accounts.inc.php';
     $fname = $_POST['fname'];
     $lname = $_POST['mname'];
     $mname = $_POST['lname'];

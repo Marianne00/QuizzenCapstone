@@ -8,8 +8,8 @@
       <input type="text" name="username" /><br/>
       <input type="password" name="password" /><br/>
       <input type="submit" name="btnLogin" />
-    </br/>
-    </br/>
+    </br>
     </form>
+    <a href="register.php">Register Now!</a>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-  require 'includes/accounts.inc.php';
+  require '../assets/includes/accounts.inc.php';
   $username = $_POST['username'];
   $password = $_POST['password'];
   $con = "";
