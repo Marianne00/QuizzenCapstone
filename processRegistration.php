@@ -5,6 +5,12 @@
     $mname = $_POST['lname'];
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $confirm = $_POST['confirm'];
+    $con = "";
     $accounts = new Accounts();
-    $accounts->registerAccount($fname, $mname, $lname, $username, $password);
+    if($accounts->verifyPassword($password, $confirm)){
+        $accounts->registerAccount($fname, $mname, $lname, $username, $password, $con);
+    }else{
+        echo "Passwords don't match";
+    }
 ?>
