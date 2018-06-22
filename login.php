@@ -5,8 +5,8 @@
   </head>
   <body>
     <form method="post" action="processLogin.php">
-      <input type="text" name="username" /><br/>
-      <input type="password" name="password" /><br/>
+      <input type="text" name="username" placeholder="Username" /><br/>
+      <input type="password" name="password" placeholder="Password" /><br/>
       <input type="submit" name="btnLogin" />
     </br/>
     </br/>
